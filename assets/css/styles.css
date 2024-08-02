@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --primary: #F9DF7B;
+    --secondary: #A9C45D;
+    --tertiary: #E2683B; 
+    --quaternary: #F8AB06;
+    --quinary: #67932F;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Merriweather", serif;   
+    font-weight: bold; 
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+}
+
+/*--- Navigation custom CSS---*/
+
+.navbar {
+    background-color: var(--primary);
+}
+
+.nav-link {
+    text-decoration: none; 
+    font-family: "Montserrat", sans-serif; 
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--tertiary);
+}
+
+/*--- Header custom CSS---*/
+
+#hero {
+    background-color: var(--secondary);
+}
+
+.badge {
+    background-color: var(--quaternary);
+}
+
+.texto-destacado {
+    color: var(--tertiary);
+}
+
+.btn-hero {
+    background-color: var(--quaternary);
+    border: none;
+}
+
+.btn-hero {
+    transition-duration: 0.4s;
+}
+
+.btn-hero:hover {
+    background-color: var(--tertiary);
+    color: white;
+}
+
+.img-hero {
+    border-radius: 50%;
+}
+
+/*--- About section custom CSS---*/
+
+.img-box {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.img-about {
+    border-radius: 10%;
+    object-fit: cover;
+    width: 85%;
+    height: 85%;
+}
+
+.texto-destacado-p {
+    font-weight: bold;
+}
+
+.icono-nutriaccion {
+    width: 2rem;
+}
+
+.card-about {
+    background-color: #ffffe6;
+    border-width: 2px;
+    border-color: #eb987a;
+}
+
+.card-about:hover {
+    opacity: 0.8;
+}
+
+.card-img {
+    width: 8rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+
+/*--- Mis consultas custom CSS---*/
+
+#mis-consultas {
+    background-color: var(--primary);
+}
+
+.card-container {
+    justify-content: space-between;
+}
+
+.card-consulta {
+    background-color: var(--secondary);
+    border-width: 2px;
+    border-color: var(--quinary);
+}
+
+.card-consulta:hover {
+    opacity: 0.8;
+}
+
+/*--- Contacto custom CSS---*/
+
+.social-icon {
+    font-size: 2.5rem;
+}
+
+.icon-text {
+    margin: 0 0 0 10px;
+}
+
+.img-contact {
+    border-radius: 10%;
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+}
+
+/*--- Media queries ---*/
+
+@media (max-width: 1400px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    .btn-hero {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .img-box {
+        justify-content: center;  
+    }
+
+    .img-about {
+        width: 75%;
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+
+    .social-icon-container {
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .card-about {
+        margin-top: 1rem;
+    }
+
+    .card-consulta {
+        margin-top: 1rem;
+    }
+
+}
