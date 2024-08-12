@@ -75,14 +75,18 @@ p {
 .img-box {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
+    background-image: url(../img/food_pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-about {
     border-radius: 10%;
-    object-fit: cover;
-    width: 85%;
-    height: 85%;
+    object-fit: contain;
+    width: 90%;
+    height: auto;
+    box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
 }
 
 .texto-destacado-p {
@@ -140,6 +144,10 @@ p {
     width: 2.5rem;
 }
 
+.social-icon-container{
+    margin-top: 1rem;
+}
+
 .icon-text {
     margin: 0 0 0 10px;
 }
@@ -191,8 +199,16 @@ p {
         justify-content: center;
     }
 
-    .social-icon-container {
+    .contact-container {
         margin-bottom: 2rem;
+    }
+
+    .social-icon-container{
+        margin-top: 4rem;
+    }
+
+    .img-contact-box {
+        margin-top: 1rem;
     }
 
 }
@@ -209,4 +225,5 @@ p {
     .card-container-2 {
         margin-top: 0.1rem;
     }
+
 }
