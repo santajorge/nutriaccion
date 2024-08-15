@@ -83,8 +83,7 @@ p {
 
 .img-about {
     border-radius: 10%;
-    object-fit: contain;
-    width: 90%;
+    width: 100%;
     height: auto;
     box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
 }
@@ -129,6 +128,7 @@ p {
 }
 
 .card-consulta {
+    margin-top: 1rem;
     background-color: var(--secondary);
     border-width: 2px;
     border-color: var(--quinary);
@@ -154,9 +154,8 @@ p {
 
 .img-contact {
     border-radius: 10%;
-    object-fit: cover;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: auto;
 }
 
 .icon-link{
@@ -164,15 +163,6 @@ p {
 }
 
 /*--- Media queries ---*/
-
-@media (max-width: 1400px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-    h4 {
-        font-size: 1.3rem;
-    }
-}
 
 @media (max-width: 768px) {
     h1 {
@@ -186,21 +176,43 @@ p {
     }
 }
 
-@media only screen and (max-width: 1400px) {
-    .img-box {
-        justify-content: center;  
+@media only screen and (max-width: 1200px) {
+    .card-about {
+        margin-top: 1rem;
     }
 
-    .img-about {
-        width: 75%;
+    .card-container-2 {
+        margin-top: 0.1rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    .img-box {
+        justify-content: center;  
     }
 
     .card-container {
         justify-content: center;
     }
 
+    .card-about {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
     .contact-container {
         margin-bottom: 2rem;
+    }
+
+    .card-consulta {
+        margin-left: 1rem;
     }
 
     .social-icon-container{
@@ -213,17 +225,23 @@ p {
 
 }
 
-@media only screen and (max-width: 1200px) {
-    .card-about {
-        margin-top: 1rem;
+@media only screen and (max-width: 1400px) and (min-width: 768px) {
+    .img-about {
+        width: 45%;
+        height: auto;
     }
 
-    .card-consulta {
-        margin-top: 1rem;
+    .img-contact-box {
+        display: flex;
+        justify-content: center;
     }
 
-    .card-container-2 {
-        margin-top: 0.1rem;
+    .img-contact {
+        width: 45%;
+        height: auto;
     }
 
 }
+
+
+
